@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZHWelcomeView" customModule="Weibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="b29-83-vUt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avater" translatesAutoresizingMaskIntoConstraints="NO" id="8eu-MX-rQc">
+                    <rect key="frame" x="127.5" y="427" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="hcM-Yx-aY6"/>
+                        <constraint firstAttribute="width" constant="120" id="ny8-TG-oIY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay2-oi-0v6">
+                    <rect key="frame" x="87.5" y="562" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="acB-yA-i7g"/>
+                        <constraint firstAttribute="width" constant="200" id="nC3-3h-1au"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ay2-oi-0v6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0OH-gm-zBP"/>
+                <constraint firstItem="b29-83-vUt" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="S9a-t3-xhg"/>
+                <constraint firstItem="b29-83-vUt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ti5-hR-q7G"/>
+                <constraint firstItem="Ay2-oi-0v6" firstAttribute="top" secondItem="8eu-MX-rQc" secondAttribute="bottom" constant="15" id="ciJ-ON-rZw"/>
+                <constraint firstItem="8eu-MX-rQc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hs2-38-hPZ"/>
+                <constraint firstAttribute="bottom" secondItem="8eu-MX-rQc" secondAttribute="bottom" constant="120" id="lVo-ZR-WdZ"/>
+                <constraint firstItem="b29-83-vUt" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="mKJ-fu-PK9"/>
+                <constraint firstItem="b29-83-vUt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nH2-K5-wI9"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomCon" destination="lVo-ZR-WdZ" id="ZMt-kp-3g7"/>
+                <outlet property="icon" destination="8eu-MX-rQc" id="saA-ce-6S7"/>
+                <outlet property="tip" destination="Ay2-oi-0v6" id="4yZ-zw-MP2"/>
+            </connections>
+            <point key="canvasLocation" x="-79.200000000000003" y="148.87556221889056"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avater" width="120" height="120"/>
+        <image name="welcome" width="750" height="1334"/>
+    </resources>
+</document>

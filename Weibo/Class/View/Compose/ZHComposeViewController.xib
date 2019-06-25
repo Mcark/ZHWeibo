@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHComposeViewController" customModule="Weibo" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="9fT-cZ-t0U" id="REY-IE-zAg"/>
+                <outlet property="titleLabel" destination="mfY-5M-AAb" id="ria-dP-zcN"/>
+                <outlet property="toolBar" destination="NRL-St-3zg" id="moB-xX-0UG"/>
+                <outlet property="toolbarBottomCons" destination="DmC-hx-4Ep" id="apj-6K-Aps"/>
+                <outlet property="view" destination="Wa0-rR-B8s" id="Z9D-yT-Hr1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wa0-rR-B8s">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-cZ-t0U" customClass="ZHComposeTextView" customModule="Weibo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ZGa-ig-vmm"/>
+                    </connections>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRL-St-3zg">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NRL-St-3zg" secondAttribute="bottom" id="DmC-hx-4Ep"/>
+                <constraint firstAttribute="trailing" secondItem="9fT-cZ-t0U" secondAttribute="trailing" id="Oa1-im-eY0"/>
+                <constraint firstAttribute="trailing" secondItem="NRL-St-3zg" secondAttribute="trailing" id="Rkd-JQ-LF7"/>
+                <constraint firstItem="9fT-cZ-t0U" firstAttribute="leading" secondItem="Wa0-rR-B8s" secondAttribute="leading" id="fdF-cV-RAW"/>
+                <constraint firstItem="NRL-St-3zg" firstAttribute="leading" secondItem="Wa0-rR-B8s" secondAttribute="leading" id="rsM-ml-DD9"/>
+                <constraint firstItem="9fT-cZ-t0U" firstAttribute="top" secondItem="Wa0-rR-B8s" secondAttribute="top" id="tWV-Qh-VMd"/>
+                <constraint firstItem="NRL-St-3zg" firstAttribute="top" secondItem="9fT-cZ-t0U" secondAttribute="bottom" id="ysE-qL-Wkw"/>
+            </constraints>
+            <point key="canvasLocation" x="400.80000000000001" y="-230.73463268365819"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mfY-5M-AAb">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="发微博">
+                    <attributes>
+                        <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <font key="NSFont" size="8" name=".AppleSystemUIFont"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment>
+                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                    <attributes>
+                        <font key="NSFont" size="3" name=".AppleSystemUIFont"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="木子爷">
+                    <attributes>
+                        <color key="NSColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="-">
+                    <attributes>
+                        <color key="NSColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="11" name=".AppleSystemUIFont"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+                <fragment content="木子爷">
+                    <attributes>
+                        <color key="NSColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-43" y="-244"/>
+        </label>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uZc-Ll-VaB" userLabel="通过XIB创建发布按钮">
+            <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="发布"/>
+            <point key="canvasLocation" x="-7" y="-314"/>
+        </button>
+    </objects>
+</document>

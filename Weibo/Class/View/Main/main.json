@@ -1,0 +1,38 @@
+[
+  {
+    "clsName" : "ZHHomeController",
+    "title" : "首页",
+    "vistorInfo" : {
+      "message" : "关注一些人, 回这里看看有什么惊喜",
+      "imageName" : ""
+    },
+    "imageName" : "index"
+  },
+  {
+    "clsName" : "ZHDiscoverController",
+    "title" : "发现",
+    "vistorInfo" : {
+      "message" : "关注一些人, 回这里看看有什么惊喜",
+      "imageName" : ""
+    },
+    "imageName" : "find"
+  },
+  {
+    "clsName" : "ZHMessageController",
+    "title" : "消息",
+    "vistorInfo" : {
+      "message" : "关注一些人, 回这里看看有什么惊喜",
+      "imageName" : ""
+    },
+    "imageName" : "exercise"
+  },
+  {
+    "clsName" : "ZHMeController",
+    "title" : "我",
+    "vistorInfo" : {
+      "message" : "关注一些人, 回这里看看有什么惊喜",
+      "imageName" : ""
+    },
+    "imageName" : "me"
+  }
+]
